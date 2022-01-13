@@ -1,0 +1,14 @@
+<!-- ko if: (isVisible()) -->
+<div class="shipping-information billing-information">
+    <div class="ship-to">
+        <div class="shipping-information-title billing-information-title">
+            <span data-bind="i18n: 'Bill To:'"></span>
+        </div>
+        <div class="shipping-information-content billing-information-content">
+            <!-- ko foreach: getRegion('bill-to') -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+            <!--/ko-->
+        </div>
+    </div>
+</div>
+<!--/ko-->
